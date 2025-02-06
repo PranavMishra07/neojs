@@ -26,7 +26,7 @@ let emp = [
     }
 
 ]
-let data = emp.map((e) => { return e.name })
+let data = emp.map((e) => { return e.name.length > 5 })
 // data = emp.map((e) => { return e.age > 89 })   //in condition map returns true or false
 console.log(data);
 
