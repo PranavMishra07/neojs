@@ -5,7 +5,7 @@
 let intervel = setInterval(() => { alert("rinkiya ke papa") }, 1000)
 // to stop the repeated execution, you need to use clearinterval
 clearInterval(intervel)
-
+let st = 0
 function start() {
     let c = 0
     let count = document.getElementById('count')

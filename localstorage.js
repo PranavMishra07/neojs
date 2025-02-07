@@ -4,8 +4,10 @@
 //Domain  www.google.com
 //port   5000
 
-//there are four main funnction in localStorage;
-// setItem()   -> store data to localstorage
-//getItem()   ->data retrive in localstorage
-//removeItem()  ->particular data remove in localstorage
-//Clear()     ->all data clear in localstorage
+//there are the main funnction(methods) provided by localStorage;
+// setItem(key,value)   -> store data to localstorage
+//getItem(key)   ->data retrive in localstorage
+//removeItem(key)  ->particular data remove in localstorage
+//Clear()     ->all data clear from localstorage
+
+//important Notes => both key and values must be String  
