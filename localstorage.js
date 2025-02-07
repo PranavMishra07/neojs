@@ -11,7 +11,7 @@
 //removeItem(key)  ->particular data remove in localstorage
 //Clear()     ->all data clear from localstorage
 // format key and value
-//important Notes => both key and values must be String  in localstorage 
+//important Notes => both key and values must be String  in localstorage
 //save data in the local storage
 //key is always unique if you write the same  it override the last key
 // localStorage.setItem("Name", "Amit")
@@ -22,20 +22,9 @@
 // alert(age)
 // let fname = "Manish "
 // localStorage.setItem("fname", fname)
-localStorage.removeItem("fname")
+// localStorage.removeItem("fname")
 // localStorage.clear()
 
 
-function submit() {
-    let name = document.querySelector("#name").value
-    let address = document.querySelector("#address").value
-    let contact = document.querySelectora("#contact").value
-    let city = document.querySelector("#city").value
-    localStorage.setItem("name", name)
-    localStorage.setItem("address", address)
-    localStorage.setItem("contact", contact)
-    localStorage.setItem("city", city)
-    return false
 
-}
 // login form se next page par data show ho then logout button se data remove ho jaye
