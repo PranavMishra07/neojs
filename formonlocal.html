@@ -27,6 +27,7 @@
         font-weight: bold;
         border: solid blue;
         border-radius: 10px;
+        background-color: antiquewhite;
     }
 
     button {
@@ -36,29 +37,64 @@
         margin-top: 20px;
         background-color: rgb(160, 96, 220);
         font-size: 34px;
+        font-weight: bold;
         border-radius: 15px;
         color: white;
         border: none;
     }
+
+    button:hover {
+        background-color: rgb(255, 252, 90);
+        color: rgba(1, 1, 1, 0.986);
+        transition-duration: 1s;
+        border: 1px solid;
+    }
+
+    form {
+        background-color: #65ddff;
+        border: 2px solid;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .head {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+        background-color: gold;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    span {
+        color: #9900b0;
+
+    }
 </style>
 
 <body>
+    <label id="log">Login -</label>
     <form action="" id="frm" onsubmit="return sub()">
-        <label for="">Name</label>
+        <label for="">Name -</label>
         <input type="text" id="name"> <br><br>
-        <label for="">Address</label>
-        <input type="text" id="address"><br><br>
-        <label for="">Contact</label>
+        <label for="">Course</label>
+        <input type="text" id="course"><br><br>
+        <label for="">ID -</label>
+        <input type="text" id="id"><br><br>
+        <label for="">Contact -</label>
         <input type="text" id="contact"><br><br>
-        <label for="">City</label>
-        <input type="text" id="city"><br><br>
+        <label for="">Address -</label>
+        <input type="text" id="address"><br><br>
         <button>Submit</button>
     </form>
     <div class="head">
-        <h1>Name <span id="nn"> </span></h1>
-        <h1>Address <span id="AA"> </span> </h1>
-        <h1>Contact <span id="Co"> </span></h1>
-        <h1>City <span id="Ci"> </span></h1>
+        <h1>Name - <span id="nn"> </span></h1>
+        <h1>Course - <span id="cc"> </span></h1>
+        <h1>ID - <span id="Ci"> </span></h1>
+        <h1>Contact - <span id="Co"> </span></h1>
+        <h1>Address - <span id="AA"> </span> </h1>
 
         <button onclick="logout()">Logout</button>
     </div>
