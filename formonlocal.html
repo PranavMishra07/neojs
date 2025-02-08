@@ -6,19 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .head {
+        display: none;
+    }
+
+    label {
+        font-size: 40px;
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    input {
+        height: 40px;
+        margin-left: 20px;
+        font-size: 35px;
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        border: solid blue;
+        border-radius: 10px;
+    }
+
+    button {
+        text-align: center;
+        height: 50px;
+        width: 150px;
+        margin-top: 20px;
+        background-color: rgb(160, 96, 220);
+        font-size: 34px;
+        border-radius: 15px;
+        color: white;
+        border: none;
+    }
+</style>
 
 <body>
-    <form action="" onsubmit="sub()">
-        <label for="">name</label>
+    <form action="" id="frm" onsubmit="return sub()">
+        <label for="">Name</label>
         <input type="text" id="name"> <br><br>
         <label for="">Address</label>
         <input type="text" id="address"><br><br>
-        <label for="">contact</label>
+        <label for="">Contact</label>
         <input type="text" id="contact"><br><br>
-        <label for="">city</label>
+        <label for="">City</label>
         <input type="text" id="city"><br><br>
-        <button><a href="locallogout.html">submit</a></button>
+        <button>Submit</button>
     </form>
+    <div class="head">
+        <h1>Name <span id="nn"> </span></h1>
+        <h1>Address <span id="AA"> </span> </h1>
+        <h1>Contact <span id="Co"> </span></h1>
+        <h1>City <span id="Ci"> </span></h1>
+
+        <button onclick="logout()">Logout</button>
+    </div>
     <script src="formonlocal.js"></script>
 </body>
 
