@@ -30,4 +30,5 @@ function logout() {
     let h1 = document.querySelector(".head").style.display = "none"
     frm.style.display = "block"
     log.style.display = "block"
+    location.reload()
 }
