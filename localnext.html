@@ -5,14 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .head {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 21px;
+            background-color: gold;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        span {
+            color: #9900b0;
+
+        }
+
+        button {
+            text-align: center;
+            height: 50px;
+            width: 150px;
+            margin-top: 20px;
+            background-color: rgb(160, 96, 220);
+            font-size: 34px;
+            font-weight: bold;
+            border-radius: 15px;
+            color: white;
+            border: none;
+        }
+
+        button:hover {
+            background-color: rgb(255, 252, 90);
+            color: rgba(1, 1, 1, 0.986);
+            transition-duration: 1s;
+            border: 1px solid;
+        }
+    </style>
 </head>
 
 <body>
-    <button onclick="showdata()">Show</button>
-    <h1 id="shname"></h1>
-    <h1 id="shage"></h1>
-    <button onclick="clearr()">clear</button>
-    <script src="localtask.js"></script>
+    <div class="head">
+        <button onclick="showdata()">Show</button>
+        <h1>Name - <span id="shname"></span></h1>
+        <h1>Age - <span id="shage"></span></h1>
+        <h1>Course - <span id="cc"> </span></h1>
+        <h1>ID - <span id="Ci"> </span></h1>
+        <h1>Contact - <span id="Co"> </span></h1>
+        <h1>Address - <span id="AA"> </span> </h1>
+        <button onclick="clearr()">clear</button>
+        <script src="localtask.js"></script>
+    </div>
 </body>
 
 </html>

@@ -7,9 +7,9 @@
     <title>Document</title>
 </head>
 <style>
-    .head {
+    /* .head {
         display: none;
-    }
+    } */
 
     label {
         font-size: 40px;
@@ -59,7 +59,7 @@
         text-align: center;
     }
 
-    .head {
+    /* .head {
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
         font-size: 25px;
@@ -71,12 +71,12 @@
     span {
         color: #9900b0;
 
-    }
+    } */
 </style>
 
 <body>
     <label id="log">Login -</label>
-    <form action="locallogout.html" id="frm" onsubmit="return sub()">
+    <form action="locallogout.html" onsubmit=" sub()">
         <label for="">Name -</label>
         <input type="text" id="name"> <br><br>
         <label for="">Course</label>
@@ -89,7 +89,7 @@
         <input type="text" id="address"><br><br>
         <button>Submit</button>
     </form>
-    <div class="head">
+    <!-- <div class="head">
         <h1>Name - <span id="nn"> </span></h1>
         <h1>Course - <span id="cc"> </span></h1>
         <h1>ID - <span id="Ci"> </span></h1>
@@ -97,7 +97,7 @@
         <h1>Address - <span id="AA"> </span> </h1>
 
         <button onclick="logout()">Logout</button>
-    </div>
+    </div> -->
     <script src="formonlocal.js"></script>
 </body>
 
