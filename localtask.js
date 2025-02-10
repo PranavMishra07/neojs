@@ -11,7 +11,7 @@ function savedata() {
     localStorage.setItem("ID", ID)
     localStorage.setItem("contact", contact)
     localStorage.setItem("address", address)
-    return false
+    // return false
 }
 function showdata() {
     let shname = document.querySelector("#shname")
@@ -34,7 +34,7 @@ function showdata() {
     shId.innerHTML = getID
     shCo.innerHTML = getcontact
     shAA.innerHTML = getaddress
-    return false
+    // return false
 }
 function clearr() {
     localStorage.clear()
