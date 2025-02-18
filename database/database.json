@@ -1,0 +1,25 @@
+{
+  "Student": [
+    {
+      "id": "0958",
+      "name": "Pranav Mishra",
+      "age": "11",
+      "city": "Indore",
+      "contact": "34434"
+    },
+    {
+      "id": "b233",
+      "name": "Himanshu ",
+      "age": "34",
+      "city": "Shahpur",
+      "contact": "552721"
+    },
+    {
+      "id": "2b23",
+      "name": "Bhupesh Mishra",
+      "age": "99",
+      "city": "betul",
+      "contact": "23233"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ch1,
+        .ch2 {
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background-color: red;
+            border: 8px solid black;
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <section data-aos="fade-up">
+        <div class="ch1"></div>
+        <div class="ch2"></div>
+    </section>
+    <section>
+        <div class="ch1"></div>
+        <div class="ch2"></div>
+    </section>
+    <section>
+        <div class="ch1" data-aos="zoom-in-up" data-aos-duration="2000"></div>
+        <div class="ch2"></div>
+    </section>
+    <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="ch1"></div>
+        <div class="ch2"></div>
+    </section>
+    <section>
+        <div class="ch1"></div>
+        <div class="ch2"></div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,  // global setting for all animations
+        });
+    </script>
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.birds.min.js"></script>
+    <script>
+        VANTA.BIRDS({
+            el: "#your-element-selector",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        })
+    </script>
+</body>
+
+</html>
