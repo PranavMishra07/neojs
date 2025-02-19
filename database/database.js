@@ -40,7 +40,7 @@ function insertdata() {
     }).then(r => alert("inserted"))
 }
 async function myedit(id) {
-    let edata = fetch(`http://localhost:3000/Student/${id}`)
+    let edata = await fetch(`http://localhost:3000/Student/${id}`)
     let fdata = await edata.json()
     let frm = `
     <input type="text" value="${fdata.id}" id="id1"  ><br><br>
